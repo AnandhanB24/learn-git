@@ -30,14 +30,26 @@ List the configuration of repo:
 Adding edited or new file to repository:
 	cmd:
 		git add "Name_of_file"
-
+		git add *.java 		-> all file with java extension will be added
+		git add .			-> all files are added
+		
 Tracking of changes: 
+		-> Green text - files that are added and need to be committed
+		-> Red text - files that are modified and newly created (untracked files)
 	cmd:
 		git status 
-			-> Green text - files that are added and need to be committed
-			-> Red text - files that are modified and newly created (untracked files)
+		git status *.txt	-> status of files with specific extension will be shown
+		git status -s		-> summary
 			
-
-			
-			
+commit:
+	cmd:
+		git commit -m "message"		-> repository get committed with the staged files 
+									-> m indicates type of FLAG (m - message flage)
+		git commit -a -m "message"	-> git stages and commits at the time
+	
+	cmd:
+		git commit			-> open the default text editor with status message/commit message/commit
+		git commit file 	-> Same as above
+		
+		git commit "message"-> error
 		
