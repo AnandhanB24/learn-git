@@ -1,0 +1,43 @@
+Creating a Local Repository:
+Different type of access to the repository are: System - All users + all repository
+												Global - all repository present in the computer for current user		
+												local  - only for the current repository
+												
+Adding a user:
+	
+	cmd :
+		git config --global user.name "Name_of_the_user" 
+		git config --local user.name "Name_of_the_user"
+		git config --system	user.name "Name_of_the_user"
+		
+Adding a email:
+
+	cmd:
+		git config --global user.email "email-id" 
+		git config --local user.email "email-id"
+		git config --system	user.email "email-id"
+		
+To check name and email
+	
+	cmd:
+		git config user.name
+		git config user.email
+		
+List the configuration of repo:
+	cmd:
+		git config --list
+		
+Adding edited or new file to repository:
+	cmd:
+		git add "Name_of_file"
+
+Tracking of changes: 
+	cmd:
+		git status 
+			-> Green text - files that are added and need to be committed
+			-> Red text - files that are modified and newly created (untracked files)
+			
+
+			
+			
+		
