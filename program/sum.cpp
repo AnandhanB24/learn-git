@@ -2,5 +2,9 @@
 using namespace std;
 int main()
 {
-    cout<<10+20;
+    int a,b,c =0;
+    cin>>a;
+    cin>>b;
+    c = a + b; 
+    cout<<c;
 }
