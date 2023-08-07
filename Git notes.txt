@@ -93,12 +93,5 @@ Connecting a local repository to the service provider
 5. Push our changes to the web repository
 			cmd:
 				git push origin master			-> push for the first time to the specific master branch
-				git push 						-> push directly without entering the branch name since the repository is already linked to the local
+				git push origin 				-> push directly without entering the branch name if only one branch name is present
 				
-To change the url from https to ssh:
-	cmd:
-		git remote set-url github_repository_ssh_link
-		
-	check:
-		git remote -v
-		
