@@ -90,3 +90,8 @@ Connecting a local repository to the service provider
 4. to check the activities or any repo created for the local repo in service provider
 			git remote -v
 			
+5. Push our changes to the web repository
+			cmd:
+				git push origin master			-> push for the first time to the specific master branch
+				git push origin 				-> push directly without entering the branch name if only one branch name is present
+				
