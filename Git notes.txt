@@ -36,7 +36,7 @@ Adding edited or new file to repository:
 undo staging	
 	cmd:
 		git restore --staged 
-		git restore -- staged "File name" 	-> file removed from staging area
+		git restore --staged "File name" 	-> file removed from staging area
 		git restore "File name" 			-> discard changes
 		
 Tracking of changes: 
@@ -93,5 +93,5 @@ Connecting a local repository to the service provider
 5. Push our changes to the web repository
 			cmd:
 				git push origin master			-> push for the first time to the specific master branch
-				git push origin 				-> push directly without entering the branch name if only one branch name is present
+				git push 		 				-> push directly without entering the branch name if only one branch name is present
 				
