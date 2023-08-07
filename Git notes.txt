@@ -32,6 +32,12 @@ Adding edited or new file to repository:
 		git add "Name_of_file"
 		git add *.java 		-> all file with java extension will be added
 		git add .			-> all files are added
+
+undo staging	
+	cmd:
+		git restore --staged 
+		git restore -- staged "File name" 	-> file removed from staging area
+		git restore "File name" 			-> discard changes
 		
 Tracking of changes: 
 		-> Green text - files that are added and need to be committed
@@ -46,6 +52,9 @@ commit:
 		git commit -m "message"		-> repository get committed with the staged files 
 									-> m indicates type of FLAG (m - message flage)
 		git commit -a -m "message"	-> git stages and commits at the time
+		
+		git log 					-> commit history
+		
 	
 	cmd:
 		git commit			-> open the default text editor with status message/commit message/commit
@@ -53,3 +62,31 @@ commit:
 		
 		git commit "message"-> error
 		
+remove file:
+	cmd:
+		git rm --cached "name of the file" 		-> this does not remove the file from dir but from the staging area
+		git rm -r --cached "dir" 				-> all the files  in the dir will be removed
+		
+ignore files:
+	cmd: 
+		touch .gitignore				-> file with this extension is created
+		nano .gitignore					-> add the file need to be ignored with extension or only extenssion to ignore all such extension files
+		
+change the message of commit
+	cmd:
+		git commit --amend				-> displays the last commit message in a text editor
+	
+Connecting a local repository to the service provider
+
+1. Create a new repository in the service provider website(GitHub) - with any name
+2. Copy the link to the repository 
+3. Go to git bash in out local repository and type the command 
+			cmd:
+			
+			git remote add origin master Link_of_the_repository
+				
+				origin is a short name given for the link of the repository
+				
+4. to check the activities or any repo created for the local repo in service provider
+			git remote -v
+			
